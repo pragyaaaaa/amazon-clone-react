@@ -1,11 +1,12 @@
 import React from 'react'
 import './Checkout.css'
+import Sumtotal from './Sumtotal'
 function Checkout() {
     return (
         <div className="checkout">
             <div className="checkout-left">
                 <img className="checkout-ad"
-                    src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Hero/Fuji_TallHero_Currency_v2_en_US_1x._CB428993290_.jpg"
+                    src="https://images-na.ssl-images-amazon.com/images/G/35/gateway/mobile/stripe/Amazon_GW_MobileStrip_NTA_orange_1242x150._SX1242_CB469234474_.jpg"
                     alt="checkoutL">
                 </img>
                 <div className="checkout-title">
@@ -13,7 +14,7 @@ function Checkout() {
                 </div>
             </div>
             <div className="checkout-right">
-                <h1>Sum Total</h1>
+                <Sumtotal />
             </div>
 
 

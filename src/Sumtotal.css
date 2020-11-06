@@ -1,0 +1,30 @@
+.sumtotal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  background-color: #ebedee;
+  border: 1px, solid #dddddd;
+  border-radius: 3px;
+}
+.sumtotal-gift {
+  display: flex;
+  align-items: center;
+}
+
+.sumtotal-gift > input {
+  margin-right: 5px;
+}
+
+.sumtotal > button {
+  background: #e88731;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #bf6516 #b05d14 #a15512;
+  color: black;
+}
