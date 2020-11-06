@@ -6,6 +6,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 function Header() {
     return (
         <div className='header'>
+            <Link></Link>
             <img
                 className="header-logo"
                 src="http://pngimg.com/uploads/amazon/amazon_PNG25.png"
