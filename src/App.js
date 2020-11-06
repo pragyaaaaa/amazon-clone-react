@@ -1,9 +1,11 @@
 import './App.css';
-
+import Header from './Header';
 function App() {
   return (
-    <div className="App">
-      <h1>Hey it's amazon-clone again!</h1>
+    <div className="app">
+      <Header />
+      {/*Header*/}
+      {/*Home*/}
     </div>
   );
 }
