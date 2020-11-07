@@ -4,6 +4,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import { Link } from "react-router-dom";
 import { useStateValue } from './StateProvider'
+
 /* logo, search, login, orders, prime, cart */
 function Header() {
     const [{ cart }, dispatch] = useStateValue();
