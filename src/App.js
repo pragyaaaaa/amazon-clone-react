@@ -13,7 +13,7 @@ import { Elements } from "@stripe/react-stripe-js"
 import Orders from './Orders'
 
 const promise = loadStripe(
-  "pk_test_51HkkhoDuNr994M1JreAo2QO4yNcRO2PWxGh9JKn3Ijm2kBWchx1PzL6dhNMgKBf8Pd1ERC3hyVS1KYNL6PieJnWS00t4d9Q5Oj"
+  "pk_test_51Hkv0WGT03nEhP14UnTimhQYsBHINDnjfoz9jDEjBqo9mZV6oVzFRYEtCYcBlC3cndMmx6ojHxpXniokRurYnJ2S00m6Q5x274"
 );
 function App() {
   const [{ }, dispatch] = useStateValue();
