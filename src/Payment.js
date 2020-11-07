@@ -8,6 +8,7 @@ import CurrencyFormat from "react-currency-format";
 import { getCartTotal } from './Reducer';
 import axios from './axios'
 import { useHistory } from "react-router-dom"
+import { db } from './firebase'
 
 function Payment() {
     const history = useHistory();
@@ -43,9 +44,22 @@ function Payment() {
                 card: elements.getElement(CardElement)
             }
         }).then(({ paymentIntent }) => {
+
+            db.collection('users')
+                .doc(user?.uid)
+                .collection('orders')
+                .doc(paymentIntent.id)
+                .set({
+                    cart: cart,
+                    amount: paymentIntent.amount,
+                    created: paymentIntent.created
+                })
             setSucceeded(true);
             setError(null);
             setProcessing(false);
+            dispatch({
+                type: 'EMPTY_CART'
+            })
 
             history.replace('/orders')
         })
