@@ -12,7 +12,9 @@ function Home() {
             </div>
             <div className="home-row">
                 {/* product */}
-                <Product title="Girl Stop Apologizing"
+                <Product
+                    id={12678}
+                    title="Girl Stop Apologizing"
                     image="https://images-na.ssl-images-amazon.com/images/I/91CEhzOF9-L.jpg"
                     price={19.99}
                     rating={3} />

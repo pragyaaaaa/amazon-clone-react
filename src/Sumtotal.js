@@ -1,14 +1,16 @@
 import React from 'react'
 import './Sumtotal.css'
 import CurrencyFormat from "react-currency-format";
+import { useStateValue } from './StateProvider'
 function Sumtotal() {
+    const [{ cart }, dispatch] = useStateValue();
     return (
         <div className="sumtotal">
             <CurrencyFormat
                 renderText={(value) => (
                     <>
                         <p>
-                            Sumtotal (0 items): <strong>0</strong>
+                            Sumtotal ({cart.length} items): <strong>0</strong>
                         </p>
                         <small className="sumtotal-gift">
                             <input type="checkbox" />This order contains a gift.
