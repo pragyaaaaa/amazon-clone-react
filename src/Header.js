@@ -28,14 +28,16 @@ function Header() {
 
             </div>
             <div className="header-nav">
-                <div className="header-option">
-                    <span className="header-option-lineone">
-                        Hello, Pragya.
+                <Link to='./login'>
+                    <div className="header-option">
+                        <span className="header-option-lineone">
+                            Hello, Pragya.
                     </span>
-                    <span className="header-option-linetwo">
-                        Sign in.
+                        <span className="header-option-linetwo">
+                            Sign in.
                     </span>
-                </div>
+                    </div>
+                </Link>
                 <div className="header-option">
                     <span className="header-option-lineone">
                         Returns
